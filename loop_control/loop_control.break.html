@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Uso de break</title>
+</head>
+<body>
+
+    <h1>Ejemplo: Uso de break</h1>
+    <p>Este ejemplo muestra cómo terminar un bucle con break:</p>
+
+    <button onclick="ejecutar()">Ver ejemplo</button>
+    <button onclick="location.href='index.html'">Volver a Loop Control</button>
+    <button onclick="location.href='../index.html'">Volver al menú principal</button>
+
+    <script>
+        function ejecutar() {
+            var i = 0;
+            var result = "";
+
+            while (i < 10) {
+                if (i === 5) {
+                    break;
+                }
+                result += "El número es: " + i + "<br>";
+                i++;
+            }
+
+            document.write(result);
+        }
+    </script>
+
+</body>
+</html>

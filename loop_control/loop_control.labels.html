@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Uso de labels</title>
+</head>
+<body>
+
+    <h1>Ejemplo: Uso de labels</h1>
+    <p>Este ejemplo demuestra el uso de etiquetas (labels) con bucles:</p>
+
+    <button onclick="ejecutar()">Ver ejemplo</button>
+    <button onclick="location.href='index.html'">Volver a Loop Control</button>
+    <button onclick="location.href='../index.html'">Volver al menú principal</button>
+
+    <script>
+        function ejecutar() {
+            var i, j;
+
+            outerLoop: // Etiqueta del bucle externo
+            for (i = 0; i < 3; i++) {
+                document.write("Outer loop: " + i + "<br>");
+
+                innerLoop:
+                for (j = 0; j < 3; j++) {
+                    if (j === 1) {
+                        break outerLoop; // Sale del bucle externo
+                    }
+                    document.write("Inner loop: " + j + "<br>");
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>

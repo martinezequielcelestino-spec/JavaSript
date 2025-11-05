@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Operadores Lógicos</title>
+</head>
+<body>
+
+    <h1>Operadores Lógicos</h1>
+    <p>Ejemplo de operadores lógicos en JavaScript:</p>
+
+    <button onclick="ejecutar()">Ver Ejemplo</button>
+    <button onclick="location.href='index.html'">Volver</button>
+
+    <script>
+        function ejecutar() {
+            var a = true;
+            var b = false;
+            var linebreak = "<br />";
+
+            document.write("(a && b) => ");
+            result = (a && b);
+            document.write(result);
+            document.write(linebreak);
+
+            document.write("(a || b) => ");
+            result = (a || b);
+            document.write(result);
+            document.write(linebreak);
+
+            document.write("!(a && b) => ");
+            result = !(a && b);
+            document.write(result);
+            document.write(linebreak);
+        }
+    </script>
+
+</body>
+</html>

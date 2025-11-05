@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Uso de continue</title>
+</head>
+<body>
+
+    <h1>Ejemplo: Uso de continue</h1>
+    <p>Este ejemplo ignora la iteración cuando i es igual a 5:</p>
+
+    <button onclick="ejecutar()">Ver ejemplo</button>
+    <button onclick="location.href='index.html'">Volver a Loop Control</button>
+    <button onclick="location.href='../index.html'">Volver al menú principal</button>
+
+    <script>
+        function ejecutar() {
+            var i = 0;
+            var result = "";
+
+            while (i < 10) {
+                i++;
+                if (i === 5) {
+                    continue;
+                }
+                result += "El número es: " + i + "<br>";
+            }
+
+            document.write(result);
+        }
+    </script>
+
+</body>
+</html>

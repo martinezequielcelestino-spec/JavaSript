@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Función Constructor</title>
+</head>
+<body>
+
+    <h1>Función Constructor</h1>
+    <p>Ejemplo de cómo usar una función como constructor:</p>
+
+    <button onclick="ejecutar()">Ver ejemplo</button>
+    <button onclick="location.href='index.html'">Volver a Funciones</button>
+    <button onclick="location.href='../index.html'">Volver al menú principal</button>
+
+    <script>
+        function Persona(nombre, edad) {
+            this.nombre = nombre;
+            this.edad = edad;
+        }
+
+        function ejecutar() {
+            var martin = new Persona("Martín", 17);
+            alert("Nombre: " + martin.nombre + "\nEdad: " + martin.edad);
+        }
+    </script>
+
+</body>
+</html>

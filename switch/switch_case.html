@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo Switch Case</title>
+</head>
+<body>
+
+    <h1>Ejemplo de Switch - Case</h1>
+    <p>Ejemplo tomado del manual TutorialsPoint:</p>
+
+    <button onclick="ejecutar()">Ver ejemplo</button>
+    <button onclick="location.href='index.html'">Volver a Switch-Case</button>
+    <button onclick="location.href='../index.html'">Volver al menú principal</button>
+
+    <script>
+        function ejecutar() {
+            var grade = "B";
+            document.write("Ingresaste calificación: " + grade + "<br />");
+
+            switch (grade) {
+                case "A":
+                    document.write("Excelente!<br />");
+                    break;
+                case "B":
+                case "C":
+                    document.write("Bien hecho<br />");
+                    break;
+                case "D":
+                    document.write("Aprobaste<br />");
+                    break;
+                case "F":
+                    document.write("Mejor suerte la próxima vez<br />");
+                    break;
+                default:
+                    document.write("Calificación inválida<br />");
+            }
+        }
+    </script>
+
+</body>
+</html>

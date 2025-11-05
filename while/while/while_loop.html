@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo While Loop</title>
+</head>
+<body>
+
+    <h1>Ejemplo de While Loop</h1>
+    <p>Este ejemplo ejecuta un bucle while hasta que la variable i llegue a 5:</p>
+
+    <button onclick="ejecutar()">Ver ejemplo</button>
+    <button onclick="location.href='index.html'">Volver a While Loop</button>
+    <button onclick="location.href='../index.html'">Volver al menú principal</button>
+
+    <script>
+        function ejecutar() {
+            var i = 0;
+            var result = "";
+            while (i < 5) {
+                result += "El número es: " + i + "<br>";
+                i++;
+            }
+            document.write(result);
+        }
+    </script>
+
+</body>
+</html>

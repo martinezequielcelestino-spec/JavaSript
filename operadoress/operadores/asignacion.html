@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Operadores de Asignación</title>
+</head>
+<body>
+
+    <h1>Operadores de Asignación</h1>
+    <p>Ejemplo de operadores de asignación en JavaScript:</p>
+
+    <button onclick="ejecutar()">Ver Ejemplo</button>
+    <button onclick="location.href='index.html'">Volver</button>
+
+    <script>
+        function ejecutar() {
+            var a = 33;
+            var linebreak = "<br />";
+
+            document.write("Valor inicial de a: " + a);
+            document.write(linebreak);
+
+            a = a + 10;
+            document.write("a = a + 10 => " + a);
+            document.write(linebreak);
+
+            a += 5;
+            document.write("a += 5 => " + a);
+            document.write(linebreak);
+
+            a -= 3;
+            document.write("a -= 3 => " + a);
+            document.write(linebreak);
+
+            a *= 2;
+            document.write("a *= 2 => " + a);
+            document.write(linebreak);
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Llamada a una Función</title>
+</head>
+<body>
+
+    <h1>Llamada a una Función</h1>
+    <p>Ejemplo de cómo llamar a una función:</p>
+
+    <button onclick="ejecutar()">Ver ejemplo</button>
+    <button onclick="location.href='index.html'">Volver a Funciones</button>
+    <button onclick="location.href='../index.html'">Volver al menú principal</button>
+
+    <script>
+        function sumar(a, b) {
+            return a + b;
+        }
+
+        function ejecutar() {
+            var resultado = sumar(5, 10);
+            alert("El resultado es: " + resultado);
+        }
+    </script>
+
+</body>
+</html>

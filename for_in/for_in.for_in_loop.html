@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo For-In Loop</title>
+</head>
+<body>
+
+    <h1>Ejemplo de For-In Loop</h1>
+    <p>Este ejemplo usa un bucle for...in para recorrer las propiedades de un objeto:</p>
+
+    <button onclick="ejecutar()">Ver ejemplo</button>
+    <button onclick="location.href='../index.html'">Volver al menú principal</button>
+
+    <script>
+        function ejecutar() {
+            var obj = {
+                nombre: "Martín",
+                edad: 17,
+                curso: "Aviónica"
+            };
+            var result = "";
+
+            for (var prop in obj) {
+                result += prop + ": " + obj[prop] + "<br>";
+            }
+
+            document.write(result);
+        }
+    </script>
+
+</body>
+</html>

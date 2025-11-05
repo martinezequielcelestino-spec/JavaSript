@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Valor Retornado</title>
+</head>
+<body>
+
+    <h1>Valor de Retorno en una Función</h1>
+    <p>Ejemplo de cómo retornar un valor desde una función:</p>
+
+    <button onclick="ejecutar()">Ver ejemplo</button>
+    <button onclick="location.href='index.html'">Volver a Funciones</button>
+    <button onclick="location.href='../index.html'">Volver al menú principal</button>
+
+    <script>
+        function obtenerArea(lado) {
+            return lado * lado;
+        }
+
+        function ejecutar() {
+            var area = obtenerArea(5);
+            alert("El área del cuadrado es: " + area);
+        }
+    </script>
+
+</body>
+</html>

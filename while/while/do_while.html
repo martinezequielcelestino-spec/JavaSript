@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo Do-While Loop</title>
+</head>
+<body>
+
+    <h1>Ejemplo de Do-While Loop</h1>
+    <p>Este ejemplo ejecuta el código al menos una vez, y luego evalúa la condición:</p>
+
+    <button onclick="ejecutar()">Ver ejemplo</button>
+    <button onclick="location.href='index.html'">Volver a While Loop</button>
+    <button onclick="location.href='../index.html'">Volver al menú principal</button>
+
+    <script>
+        function ejecutar() {
+            var i = 0;
+            var result = "";
+
+            do {
+                result += "El número es: " + i + "<br>";
+                i++;
+            } while (i < 5);
+
+            document.write(result);
+        }
+    </script>
+
+</body>
+</html>

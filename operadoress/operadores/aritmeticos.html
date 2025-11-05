@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Operadores Aritméticos</title>
+</head>
+<body>
+
+    <h1>Operadores Aritméticos</h1>
+    <p>Ejemplo básico de operadores aritméticos en JavaScript (extraído de TutorialsPoint):</p>
+
+    <button onclick="ejecutar()">Ver Ejemplo</button>
+    <button onclick="location.href='index.html'">Volver</button>
+
+    <script>
+        function ejecutar() {
+            var a = 33;
+            var b = 10;
+            var c = "Test";
+            var linebreak = "<br />";
+
+            document.write("a + b = ");
+            result = a + b;
+            document.write(result);
+            document.write(linebreak);
+
+            document.write("a - b = ");
+            result = a - b;
+            document.write(result);
+            document.write(linebreak);
+
+            document.write("a / b = ");
+            result = a / b;
+            document.write(result);
+            document.write(linebreak);
+
+            document.write("a % b = ");
+            result = a % b;
+            document.write(result);
+            document.write(linebreak);
+
+            document.write("a + b + c = ");
+            result = a + b + c;
+            document.write(result);
+            document.write(linebreak);
+
+            a = ++a;
+            document.write("++a = ");
+            document.write(a);
+            document.write(linebreak);
+
+            b = --b;
+            document.write("--b = ");
+            document.write(b);
+            document.write(linebreak);
+        }
+    </script>
+
+</body>
+</html>
